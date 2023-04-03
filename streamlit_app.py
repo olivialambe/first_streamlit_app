@@ -41,10 +41,7 @@ except URLError as e:
   streamlit.error()
   
 
-# normalise the json version
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# output as a table
-streamlit.dataframe(fruityvice_normalized)
+
 
 #adding stop so nothing runs whilst troubleshooting
 streamlit.stop()
